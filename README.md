@@ -24,7 +24,7 @@ Shift Key: Accesses secondary functions like Pi (
 How to Run
 Install Python: Ensure Python 3.x is installed on your system.
 Run Script: Execute the file from your terminal:
-python "Advanced Calculator.py"
+python calculator.py
 Using the Equation Solver
 Enter three numbers separated by commas (e.g., 1, -5, 6).
 Use Shift + ) to type the commas.
