@@ -281,12 +281,12 @@ class AdvancedCalculator:
 
     def equation_from_input(self):
         inputs=self.current_input.split(",")
-        if len(inputs)!=3:
+        try:
+            a,b,c=map(float,inputs)
+        except ValueError:  # wrong count, or a value that is not a number
             self.current_input="use: a,b,c"
             self.update_entry()
             return
-        
-        a,b,c=map(float,inputs)
         Result= equation(a,b,c)
         self.current_input=str(Result)
         self.update_entry()
